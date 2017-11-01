@@ -1,0 +1,42 @@
+#include "test_run.h"
+#include <stdlib.h>
+
+
+void print_on_7seg(u8 data)
+{
+	u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+	*(data_ptr + 0) = data;
+}
+
+int main()
+{
+	u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+	u32 data_read = 0;
+	*(data_ptr + 0) = 3;
+	data_read = *(data_ptr + 0);
+
+	xil_printf("System Initialized \r\n");
+
+	xil_printf("result from reg0: %d \r\n", data_read);
+	xil_printf("result from LSB reg0: %d \r\n", (data_read & 0xf));
+
+	*(data_ptr + 1) = 100;
+	data_read = *(data_ptr + 1);
+	xil_printf("result from reg 1: %d \r\n", data_read);
+	*(data_ptr + 2) = 2;
+	data_read = *(data_ptr + 2);
+	xil_printf("result from reg 2: %d \r\n", data_read);
+	data_read = *(data_ptr + 3);
+	xil_printf("result from reg 3: %d \r\n", data_read);
+
+
+	u8 tries = 9;
+	xil_printf("Welcome to the Guess the Number game \r\n");
+	initialize_uart(UARTLITE_DEVICE_ID);
+	xil_printf("You have nine tries \r\n");
+	print_on_7seg(tries);
+	xil_printf("Guess your number \r\n");
+    return 0;
+}
+
+

@@ -1,0 +1,11 @@
+#include "test_run.h"
+
+
+
+int main()
+{
+	xil_printf("UART working \r\n");
+    return 0;
+}
+
+

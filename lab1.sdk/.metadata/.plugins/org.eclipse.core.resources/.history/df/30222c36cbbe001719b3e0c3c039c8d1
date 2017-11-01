@@ -1,0 +1,14 @@
+#include "test_run.h"
+
+
+
+int main()
+{
+	xil_printf("System Initialized \r\n");
+	BCD_AXI_mWriteReg(BCD_BASE_ADDR, 0, 1);
+	u32 data_read = 0;
+
+    return 0;
+}
+
+

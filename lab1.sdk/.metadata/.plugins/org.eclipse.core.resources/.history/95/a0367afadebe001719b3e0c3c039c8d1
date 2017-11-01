@@ -1,0 +1,40 @@
+#include "test_run.h"
+
+
+
+int main()
+{
+	u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+	u32 data_read = 0;
+	*(data_ptr + 0) = 1;
+	data_read = *(data_ptr + 0);
+	xil_printf("System Initialized \r\n");
+	//BCD_AXI_mWriteReg(BCD_BASE_ADDR, 0, 1);
+	//BCD_AXI_mWriteReg(BCD_BASE_ADDR, 1, 2);
+	//BCD_AXI_mWriteReg(BCD_BASE_ADDR, 2, 3);
+	//u32 data_read = 0;
+	//data_read = BCD_AXI_mReadReg(BCD_BASE_ADDR, 0);
+	xil_printf("result from reg0: %d \r\n", data_read);
+	xil_printf("result from LSB reg0: %d \r\n", (data_read & 0xf));
+	xil_printf("result from MSB reg0: %d \r\n", (data_read & 0xf000)>>24);
+	*(data_ptr + 1) = 100;
+	data_read = *(data_ptr + 1);
+	xil_printf("result from reg 1: %d \r\n", data_read);
+	*(data_ptr + 2) = 2;
+	data_read = *(data_ptr + 2);
+	xil_printf("result from reg 2: %d \r\n", data_read);
+	data_read = *(data_ptr + 3);
+	xil_printf("result from reg 3: %d \r\n", data_read);
+	//data_read = BCD_AXI_mReadReg(BCD_BASE_ADDR, 1);
+	//xil_printf("result 1: %d \r\n", data_read);
+	//data_read = BCD_AXI_mReadReg(BCD_BASE_ADDR, 2);
+	//xil_printf("result 2: %d \r\n", data_read);
+	//if (data_read == 1) {
+	//	xil_printf("read and write to axi to BCD_seg worked \r\n");
+	//}
+	//data_read = BCD_AXI_mReadReg(BCD_BASE_ADDR, 4);
+	//xil_printf("result from hw : %d \r\n", data_read);
+    return 0;
+}
+
+

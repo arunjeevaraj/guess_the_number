@@ -1,0 +1,2673 @@
+05:53:54 **** Build of project bcd_seg_mb_bsp ****
+make -k all 
+Running Make include in microblaze_0/libsrc/bram_v4_1/src
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/cpu_v2_6/src
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/standalone_v6_3/src
+make -C microblaze_0/libsrc/standalone_v6_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/intc_v3_6/src
+make -C microblaze_0/libsrc/intc_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/uartlite_v3_2/src
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/bcd_Axi_v1_0/src
+make -C microblaze_0/libsrc/bcd_Axi_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/tmrctr_v4_3/src
+make -C microblaze_0/libsrc/tmrctr_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make libs in microblaze_0/libsrc/bram_v4_1/src
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bram
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in microblaze_0/libsrc/cpu_v2_6/src
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling cpu
+Running Make libs in microblaze_0/libsrc/standalone_v6_3/src
+make -C microblaze_0/libsrc/standalone_v6_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling standalone
+Running Make libs in microblaze_0/libsrc/intc_v3_6/src
+make -C microblaze_0/libsrc/intc_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling intc
+Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartlite
+Running Make libs in microblaze_0/libsrc/bcd_Axi_v1_0/src
+make -C microblaze_0/libsrc/bcd_Axi_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bcd_Axi...
+bcd_Axi_selftest.c: In function 'BCD_AXI_Reg_SelfTest':
+bcd_Axi_selftest.c:52:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( BCD_AXI_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                        ^~
+bcd_Axi_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+Running Make libs in microblaze_0/libsrc/tmrctr_v4_3/src
+make -C microblaze_0/libsrc/tmrctr_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling tmrctr
+Finished building libraries
+
+**** Build of configuration Debug for project bcd_seg_mb ****
+
+Nothing to build for project bcd_seg_mb
+06:05:55 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+In file included from ../src/test_run.h:11:0,
+                 from ../src/test_run.c:1:
+../src/system_config.h:15:21: fatal error: xaxidma.h: No such file or directory
+ #include "xaxidma.h"
+src/subdir.mk:27: recipe for target 'src/test_run.o' failed
+                     ^
+compilation terminated.
+make: *** [src/test_run.o] Error 1
+06:12:27 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+In file included from ../src/test_run.c:1:0:
+../src/test_run.h:14:21: fatal error: dma_api.h: No such file or directory
+ #include "dma_api.h"
+                     ^
+compilation terminated.
+src/subdir.mk:27: recipe for target 'src/test_run.o' failed
+make: *** [src/test_run.o] Error 1
+06:13:23 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+In file included from ../src/test_run.c:1:0:
+../src/test_run.h:14:21: fatal error: dma_api.h: No such file or directory
+ #include "dma_api.h"
+                     ^
+src/subdir.mk:27: recipe for target 'src/test_run.o' failed
+compilation terminated.
+make: *** [src/test_run.o] Error 1
+06:57:29 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+In file included from ../src/test_run.c:1:0:
+../src/test_run.h:14:21: fatal error: dma_api.h: No such file or directory
+ #include "dma_api.h"
+                     ^
+compilation terminated.
+src/subdir.mk:27: recipe for target 'src/test_run.o' failed
+make: *** [src/test_run.o] Error 1
+06:58:35 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+In file included from ../src/test_run.c:1:0:
+../src/test_run.h:14:21: fatal error: dma_api.h: No such file or directory
+ #include "dma_api.h"
+src/subdir.mk:30: recipe for target 'src/test_run.o' failed
+                     ^
+compilation terminated.
+make: *** [src/test_run.o] Error 1
+06:58:46 **** Clean-only build of configuration Debug for project bcd_seg_mb ****
+make clean 
+rm -rf  ./src/main.o ./src/test_run.o ./src/timer_api.o ./src/uart_api.o  ./src/main.d ./src/test_run.d ./src/timer_api.d ./src/uart_api.d  bcd_seg_mb.elf.size  bcd_seg_mb.elf
+ 
+06:58:46 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+In file included from ../src/test_run.c:1:0:
+../src/test_run.h:14:21: fatal error: dma_api.h: No such file or directory
+ #include "dma_api.h"
+                     ^
+compilation terminated.
+src/subdir.mk:27: recipe for target 'src/test_run.o' failed
+make: *** [src/test_run.o] Error 1
+06:59:11 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c:6:22: error: unknown type name 'INTC'
+  int SetupIntrSystem(INTC * IntcInstancePtr,
+                      ^~~~
+../src/test_run.c:7:2: error: unknown type name 'XAxiDma'
+  XAxiDma * AxiDmaPtr, u16 TxIntrId, u16 RxIntrId);
+  ^~~~~~~
+../src/test_run.c: In function 'main':
+../src/test_run.c:64:11: warning: implicit declaration of function 'setup_dma' [-Wimplicit-function-declaration]
+  status = setup_dma();
+           ^~~~~~~~~
+../src/test_run.c:74:21: error: 'RX_BUFFER_BASE' undeclared (first use in this function)
+  clear_frame((void*)RX_BUFFER_BASE);
+                     ^~~~~~~~~~~~~~
+../src/test_run.c:74:21: note: each undeclared identifier is reported only once for each function it appears in
+../src/test_run.c:83:11: warning: implicit declaration of function 'setup_hw_dut' [-Wimplicit-function-declaration]
+  status = setup_hw_dut();
+           ^~~~~~~~~~~~
+../src/test_run.c:89:2: warning: implicit declaration of function 'write_trans_mat_hw' [-Wimplicit-function-declaration]
+  write_trans_mat_hw(trans_mat);
+  ^~~~~~~~~~~~~~~~~~
+src/subdir.mk:27: recipe for target 'src/test_run.o' failed
+../src/test_run.c:91:2: warning: implicit declaration of function 'dma_rx_req' [-Wimplicit-function-declaration]
+  dma_rx_req((void*)RX_BUFFER_BASE, MAX_PKT_LEN);
+  ^~~~~~~~~~
+../src/test_run.c:91:36: error: 'MAX_PKT_LEN' undeclared (first use in this function)
+  dma_rx_req((void*)RX_BUFFER_BASE, MAX_PKT_LEN);
+                                    ^~~~~~~~~~~
+../src/test_run.c:92:2: warning: implicit declaration of function 'dma_tx_req' [-Wimplicit-function-declaration]
+  dma_tx_req((void*)TX_BUFFER_BASE, MAX_PKT_LEN);
+  ^~~~~~~~~~
+../src/test_run.c:92:20: error: 'TX_BUFFER_BASE' undeclared (first use in this function)
+  dma_tx_req((void*)TX_BUFFER_BASE, MAX_PKT_LEN);
+                    ^~~~~~~~~~~~~~
+../src/test_run.c:93:2: warning: implicit declaration of function 'wait_till_tx_done' [-Wimplicit-function-declaration]
+  wait_till_tx_done();
+  ^~~~~~~~~~~~~~~~~
+../src/test_run.c:95:2: warning: implicit declaration of function 'wait_till_rx_done' [-Wimplicit-function-declaration]
+  wait_till_rx_done();
+  ^~~~~~~~~~~~~~~~~
+../src/test_run.c:101:2: warning: implicit declaration of function 'DisableIntrSystem' [-Wimplicit-function-declaration]
+  DisableIntrSystem(TX_INTR_ID, RX_INTR_ID);
+  ^~~~~~~~~~~~~~~~~
+../src/test_run.c:101:20: error: 'TX_INTR_ID' undeclared (first use in this function)
+  DisableIntrSystem(TX_INTR_ID, RX_INTR_ID);
+                    ^~~~~~~~~~
+../src/test_run.c:101:32: error: 'RX_INTR_ID' undeclared (first use in this function)
+  DisableIntrSystem(TX_INTR_ID, RX_INTR_ID);
+                                ^~~~~~~~~~
+../src/test_run.c: In function 'load_frame':
+../src/test_run.c:121:2: error: unknown type name 'data_type'
+  data_type *buffer_ptr = (data_type*) frame_ptr;
+  ^~~~~~~~~
+../src/test_run.c:121:27: error: 'data_type' undeclared (first use in this function)
+  data_type *buffer_ptr = (data_type*) frame_ptr;
+                           ^~~~~~~~~
+../src/test_run.c:121:37: error: expected expression before ')' token
+  data_type *buffer_ptr = (data_type*) frame_ptr;
+                                     ^
+../src/test_run.c: In function 'clear_frame':
+../src/test_run.c:132:2: error: unknown type name 'data_type'
+  data_type *buffer_ptr = (data_type*) frame_ptr;
+  ^~~~~~~~~
+../src/test_run.c:132:27: error: 'data_type' undeclared (first use in this function)
+  data_type *buffer_ptr = (data_type*) frame_ptr;
+                           ^~~~~~~~~
+../src/test_run.c:132:37: error: expected expression before ')' token
+  data_type *buffer_ptr = (data_type*) frame_ptr;
+                                     ^
+../src/test_run.c: In function 'print_frame':
+../src/test_run.c:143:2: error: unknown type name 'data_type'
+  data_type *buffer_ptr = (data_type*) frame_ptr;
+  ^~~~~~~~~
+../src/test_run.c:143:27: error: 'data_type' undeclared (first use in this function)
+  data_type *buffer_ptr = (data_type*) frame_ptr;
+                           ^~~~~~~~~
+../src/test_run.c:143:37: error: expected expression before ')' token
+  data_type *buffer_ptr = (data_type*) frame_ptr;
+                                     ^
+../src/test_run.c:146:14: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+    printf(" %f ",buffer_ptr[6*i + j]);
+              ^
+../src/test_run.c: In function 'copy_to_tx_dma_addr':
+../src/test_run.c:155:2: error: unknown type name 'data_type'
+  data_type *buffer = (data_type*) frame_i;
+  ^~~~~~~~~
+../src/test_run.c:155:23: error: 'data_type' undeclared (first use in this function)
+  data_type *buffer = (data_type*) frame_i;
+                       ^~~~~~~~~
+../src/test_run.c:155:33: error: expected expression before ')' token
+  data_type *buffer = (data_type*) frame_i;
+                                 ^
+../src/test_run.c:156:13: error: 'tx_dma_buffer' undeclared (first use in this function)
+  data_type *tx_dma_buffer = (data_type*)TX_BUFFER_BASE;
+             ^~~~~~~~~~~~~
+../src/test_run.c:156:40: error: expected expression before ')' token
+  data_type *tx_dma_buffer = (data_type*)TX_BUFFER_BASE;
+                                        ^
+../src/test_run.c: In function 'sw_dut_exe':
+../src/test_run.c:172:2: error: unknown type name 'data_type'
+  data_type *f_i_b = (data_type*) f_i;
+  ^~~~~~~~~
+../src/test_run.c:172:22: error: 'data_type' undeclared (first use in this function)
+  data_type *f_i_b = (data_type*) f_i;
+                      ^~~~~~~~~
+../src/test_run.c:172:32: error: expected expression before ')' token
+  data_type *f_i_b = (data_type*) f_i;
+                                ^
+../src/test_run.c:173:13: error: 'f_o_b' undeclared (first use in this function)
+  data_type *f_o_b = (data_type*) f_o;
+             ^~~~~
+../src/test_run.c:173:32: error: expected expression before ')' token
+  data_type *f_o_b = (data_type*) f_o;
+                                ^
+../src/test_run.c:174:13: error: 't_m_b' undeclared (first use in this function)
+  data_type *t_m_b = (data_type*) t_m;
+             ^~~~~
+../src/test_run.c:174:32: error: expected expression before ')' token
+  data_type *t_m_b = (data_type*) t_m;
+                                ^
+make: *** [src/test_run.o] Error 1
+06:59:23 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c:6:22: error: unknown type name 'INTC'
+  int SetupIntrSystem(INTC * IntcInstancePtr,
+                      ^~~~
+../src/test_run.c:7:2: error: unknown type name 'XAxiDma'
+  XAxiDma * AxiDmaPtr, u16 TxIntrId, u16 RxIntrId);
+  ^~~~~~~
+../src/test_run.c: In function 'main':
+../src/test_run.c:64:11: warning: implicit declaration of function 'setup_dma' [-Wimplicit-function-declaration]
+  status = setup_dma();
+           ^~~~~~~~~
+../src/test_run.c:74:21: error: 'RX_BUFFER_BASE' undeclared (first use in this function)
+  clear_frame((void*)RX_BUFFER_BASE);
+                     ^~~~~~~~~~~~~~
+../src/test_run.c:74:21: note: each undeclared identifier is reported only once for each function it appears in
+../src/test_run.c:83:11: warning: implicit declaration of function 'setup_hw_dut' [-Wimplicit-function-declaration]
+  status = setup_hw_dut();
+           ^~~~~~~~~~~~
+../src/test_run.c:89:2: warning: implicit declaration of function 'write_trans_mat_hw' [-Wimplicit-function-declaration]
+  write_trans_mat_hw(trans_mat);
+  ^~~~~~~~~~~~~~~~~~
+../src/test_run.c:91:2: warning: implicit declaration of function 'dma_rx_req' [-Wimplicit-function-declaration]
+src/subdir.mk:27: recipe for target 'src/test_run.o' failed
+  dma_rx_req((void*)RX_BUFFER_BASE, MAX_PKT_LEN);
+  ^~~~~~~~~~
+../src/test_run.c:91:36: error: 'MAX_PKT_LEN' undeclared (first use in this function)
+  dma_rx_req((void*)RX_BUFFER_BASE, MAX_PKT_LEN);
+                                    ^~~~~~~~~~~
+../src/test_run.c:92:2: warning: implicit declaration of function 'dma_tx_req' [-Wimplicit-function-declaration]
+  dma_tx_req((void*)TX_BUFFER_BASE, MAX_PKT_LEN);
+  ^~~~~~~~~~
+../src/test_run.c:92:20: error: 'TX_BUFFER_BASE' undeclared (first use in this function)
+  dma_tx_req((void*)TX_BUFFER_BASE, MAX_PKT_LEN);
+                    ^~~~~~~~~~~~~~
+../src/test_run.c:93:2: warning: implicit declaration of function 'wait_till_tx_done' [-Wimplicit-function-declaration]
+  wait_till_tx_done();
+  ^~~~~~~~~~~~~~~~~
+../src/test_run.c:95:2: warning: implicit declaration of function 'wait_till_rx_done' [-Wimplicit-function-declaration]
+  wait_till_rx_done();
+  ^~~~~~~~~~~~~~~~~
+../src/test_run.c:101:2: warning: implicit declaration of function 'DisableIntrSystem' [-Wimplicit-function-declaration]
+  DisableIntrSystem(TX_INTR_ID, RX_INTR_ID);
+  ^~~~~~~~~~~~~~~~~
+../src/test_run.c:101:20: error: 'TX_INTR_ID' undeclared (first use in this function)
+  DisableIntrSystem(TX_INTR_ID, RX_INTR_ID);
+                    ^~~~~~~~~~
+../src/test_run.c:101:32: error: 'RX_INTR_ID' undeclared (first use in this function)
+  DisableIntrSystem(TX_INTR_ID, RX_INTR_ID);
+                                ^~~~~~~~~~
+../src/test_run.c: In function 'load_frame':
+../src/test_run.c:121:2: error: unknown type name 'data_type'
+  data_type *buffer_ptr = (data_type*) frame_ptr;
+  ^~~~~~~~~
+../src/test_run.c:121:27: error: 'data_type' undeclared (first use in this function)
+  data_type *buffer_ptr = (data_type*) frame_ptr;
+                           ^~~~~~~~~
+../src/test_run.c:121:37: error: expected expression before ')' token
+  data_type *buffer_ptr = (data_type*) frame_ptr;
+                                     ^
+../src/test_run.c: In function 'clear_frame':
+../src/test_run.c:132:2: error: unknown type name 'data_type'
+  data_type *buffer_ptr = (data_type*) frame_ptr;
+  ^~~~~~~~~
+../src/test_run.c:132:27: error: 'data_type' undeclared (first use in this function)
+  data_type *buffer_ptr = (data_type*) frame_ptr;
+                           ^~~~~~~~~
+../src/test_run.c:132:37: error: expected expression before ')' token
+  data_type *buffer_ptr = (data_type*) frame_ptr;
+                                     ^
+../src/test_run.c: In function 'print_frame':
+../src/test_run.c:143:2: error: unknown type name 'data_type'
+  data_type *buffer_ptr = (data_type*) frame_ptr;
+  ^~~~~~~~~
+../src/test_run.c:143:27: error: 'data_type' undeclared (first use in this function)
+  data_type *buffer_ptr = (data_type*) frame_ptr;
+                           ^~~~~~~~~
+../src/test_run.c:143:37: error: expected expression before ')' token
+  data_type *buffer_ptr = (data_type*) frame_ptr;
+                                     ^
+../src/test_run.c:146:14: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+    printf(" %f ",buffer_ptr[6*i + j]);
+              ^
+../src/test_run.c: In function 'copy_to_tx_dma_addr':
+../src/test_run.c:155:2: error: unknown type name 'data_type'
+  data_type *buffer = (data_type*) frame_i;
+  ^~~~~~~~~
+../src/test_run.c:155:23: error: 'data_type' undeclared (first use in this function)
+  data_type *buffer = (data_type*) frame_i;
+                       ^~~~~~~~~
+../src/test_run.c:155:33: error: expected expression before ')' token
+  data_type *buffer = (data_type*) frame_i;
+                                 ^
+../src/test_run.c:156:13: error: 'tx_dma_buffer' undeclared (first use in this function)
+  data_type *tx_dma_buffer = (data_type*)TX_BUFFER_BASE;
+             ^~~~~~~~~~~~~
+../src/test_run.c:156:40: error: expected expression before ')' token
+  data_type *tx_dma_buffer = (data_type*)TX_BUFFER_BASE;
+                                        ^
+../src/test_run.c: In function 'sw_dut_exe':
+../src/test_run.c:172:2: error: unknown type name 'data_type'
+  data_type *f_i_b = (data_type*) f_i;
+  ^~~~~~~~~
+../src/test_run.c:172:22: error: 'data_type' undeclared (first use in this function)
+  data_type *f_i_b = (data_type*) f_i;
+                      ^~~~~~~~~
+../src/test_run.c:172:32: error: expected expression before ')' token
+  data_type *f_i_b = (data_type*) f_i;
+                                ^
+../src/test_run.c:173:13: error: 'f_o_b' undeclared (first use in this function)
+  data_type *f_o_b = (data_type*) f_o;
+             ^~~~~
+../src/test_run.c:173:32: error: expected expression before ')' token
+  data_type *f_o_b = (data_type*) f_o;
+                                ^
+../src/test_run.c:174:13: error: 't_m_b' undeclared (first use in this function)
+  data_type *t_m_b = (data_type*) t_m;
+             ^~~~~
+../src/test_run.c:174:32: error: expected expression before ')' token
+  data_type *t_m_b = (data_type*) t_m;
+                                ^
+make: *** [src/test_run.o] Error 1
+07:00:53 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building file: ../src/timer_api.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_api.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_api.d" -MT"src/timer_api.o" -o "src/timer_api.o" "../src/timer_api.c"
+Finished building: ../src/timer_api.c
+ 
+Building file: ../src/uart_api.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_api.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_api.d" -MT"src/uart_api.o" -o "src/uart_api.o" "../src/uart_api.c"
+Finished building: ../src/uart_api.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5848	    320	   3104	   9272	   2438	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+07:01:02 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5856	    320	   3104	   9280	   2440	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+07:04:02 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+07:06:25 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building file: ../src/timer_api.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_api.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_api.d" -MT"src/timer_api.o" -o "src/timer_api.o" "../src/timer_api.c"
+Finished building: ../src/timer_api.c
+ 
+Building file: ../src/uart_api.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_api.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_api.d" -MT"src/uart_api.o" -o "src/uart_api.o" "../src/uart_api.c"
+Finished building: ../src/uart_api.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5856	    320	   3104	   9280	   2440	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+07:07:44 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5944	    320	   3104	   9368	   2498	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+07:08:05 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:9:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5948	    320	   3108	   9376	   24a0	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+07:09:25 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6092	    320	   3108	   9520	   2530	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+07:09:33 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+07:34:23 **** Clean-only build of project bcd_seg_mb_bsp ****
+make -k clean 
+make -C microblaze_0/libsrc/bram_v4_1/src -s clean 
+make -C microblaze_0/libsrc/cpu_v2_6/src -s clean 
+make -C microblaze_0/libsrc/standalone_v6_3/src -s clean 
+make -C microblaze_0/libsrc/intc_v3_6/src -s clean 
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
+make -C microblaze_0/libsrc/bcd_Axi_v1_0/src -s clean 
+make -C microblaze_0/libsrc/tmrctr_v4_3/src -s clean 
+rm -f microblaze_0/lib/libxil.a
+07:34:24 **** Clean-only build of configuration Debug for project bcd_seg_mb ****
+make clean 
+rm -rf  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o  ./src/test_run.d ./src/timer_api.d ./src/uart_api.d  bcd_seg_mb.elf.size  bcd_seg_mb.elf
+ 
+07:34:24 **** Build of project bcd_seg_mb_bsp ****
+make -k all 
+Running Make include in microblaze_0/libsrc/bram_v4_1/src
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/cpu_v2_6/src
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/standalone_v6_3/src
+make -C microblaze_0/libsrc/standalone_v6_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/intc_v3_6/src
+make -C microblaze_0/libsrc/intc_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/uartlite_v3_2/src
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/bcd_Axi_v1_0/src
+make -C microblaze_0/libsrc/bcd_Axi_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/tmrctr_v4_3/src
+make -C microblaze_0/libsrc/tmrctr_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make libs in microblaze_0/libsrc/bram_v4_1/src
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bram
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in microblaze_0/libsrc/cpu_v2_6/src
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling cpu
+Running Make libs in microblaze_0/libsrc/standalone_v6_3/src
+make -C microblaze_0/libsrc/standalone_v6_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling standalone
+Running Make libs in microblaze_0/libsrc/intc_v3_6/src
+make -C microblaze_0/libsrc/intc_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling intc
+Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartlite
+Running Make libs in microblaze_0/libsrc/bcd_Axi_v1_0/src
+make -C microblaze_0/libsrc/bcd_Axi_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bcd_Axi...
+bcd_Axi_selftest.c: In function 'BCD_AXI_Reg_SelfTest':
+bcd_Axi_selftest.c:52:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( BCD_AXI_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                        ^~
+bcd_Axi_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+Running Make libs in microblaze_0/libsrc/tmrctr_v4_3/src
+make -C microblaze_0/libsrc/tmrctr_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling tmrctr
+Finished building libraries
+07:34:27 **** Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building file: ../src/timer_api.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_api.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_api.d" -MT"src/timer_api.o" -o "src/timer_api.o" "../src/timer_api.c"
+Finished building: ../src/timer_api.c
+ 
+Building file: ../src/uart_api.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_api.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_api.d" -MT"src/uart_api.o" -o "src/uart_api.o" "../src/uart_api.c"
+Finished building: ../src/uart_api.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6092	    320	   3108	   9520	   2530	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+07:35:05 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+08:16:30 **** Clean-only build of project bcd_seg_mb_bsp ****
+make -k clean 
+make -C microblaze_0/libsrc/bram_v4_1/src -s clean 
+make -C microblaze_0/libsrc/cpu_v2_6/src -s clean 
+make -C microblaze_0/libsrc/standalone_v6_3/src -s clean 
+make -C microblaze_0/libsrc/intc_v3_6/src -s clean 
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
+make -C microblaze_0/libsrc/bcd_Axi_v1_0/src -s clean 
+make -C microblaze_0/libsrc/tmrctr_v4_3/src -s clean 
+rm -f microblaze_0/lib/libxil.a
+08:16:30 **** Clean-only build of configuration Debug for project bcd_seg_mb ****
+make clean 
+rm -rf  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o  ./src/test_run.d ./src/timer_api.d ./src/uart_api.d  bcd_seg_mb.elf.size  bcd_seg_mb.elf
+ 
+08:16:31 **** Build of project bcd_seg_mb_bsp ****
+make -k all 
+Running Make include in microblaze_0/libsrc/bram_v4_1/src
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/cpu_v2_6/src
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/standalone_v6_3/src
+make -C microblaze_0/libsrc/standalone_v6_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/intc_v3_6/src
+make -C microblaze_0/libsrc/intc_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/uartlite_v3_2/src
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/bcd_Axi_v1_0/src
+make -C microblaze_0/libsrc/bcd_Axi_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/tmrctr_v4_3/src
+make -C microblaze_0/libsrc/tmrctr_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make libs in microblaze_0/libsrc/bram_v4_1/src
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bram
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in microblaze_0/libsrc/cpu_v2_6/src
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling cpu
+Running Make libs in microblaze_0/libsrc/standalone_v6_3/src
+make -C microblaze_0/libsrc/standalone_v6_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling standalone
+Running Make libs in microblaze_0/libsrc/intc_v3_6/src
+make -C microblaze_0/libsrc/intc_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling intc
+Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartlite
+Running Make libs in microblaze_0/libsrc/bcd_Axi_v1_0/src
+make -C microblaze_0/libsrc/bcd_Axi_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bcd_Axi...
+bcd_Axi_selftest.c: In function 'BCD_AXI_Reg_SelfTest':
+bcd_Axi_selftest.c:52:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( BCD_AXI_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                        ^~
+bcd_Axi_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+Running Make libs in microblaze_0/libsrc/tmrctr_v4_3/src
+make -C microblaze_0/libsrc/tmrctr_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling tmrctr
+Finished building libraries
+08:16:34 **** Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building file: ../src/timer_api.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_api.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_api.d" -MT"src/timer_api.o" -o "src/timer_api.o" "../src/timer_api.c"
+Finished building: ../src/timer_api.c
+ 
+Building file: ../src/uart_api.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_api.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_api.d" -MT"src/uart_api.o" -o "src/uart_api.o" "../src/uart_api.c"
+Finished building: ../src/uart_api.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6092	    320	   3108	   9520	   2530	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+08:18:22 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6208	    320	   3104	   9632	   25a0	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+08:19:15 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+08:24:16 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6208	    320	   3104	   9632	   25a0	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+08:24:18 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+08:24:37 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6212	    320	   3108	   9640	   25a8	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+08:24:44 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+08:28:10 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+08:29:15 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6252	    320	   3108	   9680	   25d0	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+08:29:18 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+08:30:41 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6380	    320	   3108	   9808	   2650	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+08:30:43 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+08:31:42 **** Clean-only build of configuration Debug for project bcd_seg_mb ****
+make clean 
+rm -rf  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o  ./src/test_run.d ./src/timer_api.d ./src/uart_api.d  bcd_seg_mb.elf.size  bcd_seg_mb.elf
+ 
+08:31:43 **** Clean-only build of project bcd_seg_mb_bsp ****
+make -k clean 
+make -C microblaze_0/libsrc/bram_v4_1/src -s clean 
+make -C microblaze_0/libsrc/cpu_v2_6/src -s clean 
+make -C microblaze_0/libsrc/standalone_v6_3/src -s clean 
+make -C microblaze_0/libsrc/intc_v3_6/src -s clean 
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
+make -C microblaze_0/libsrc/bcd_Axi_v1_0/src -s clean 
+make -C microblaze_0/libsrc/tmrctr_v4_3/src -s clean 
+rm -f microblaze_0/lib/libxil.a
+08:31:43 **** Build of project bcd_seg_mb_bsp ****
+make -k all 
+Running Make include in microblaze_0/libsrc/bram_v4_1/src
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/cpu_v2_6/src
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/standalone_v6_3/src
+make -C microblaze_0/libsrc/standalone_v6_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/intc_v3_6/src
+make -C microblaze_0/libsrc/intc_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/uartlite_v3_2/src
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/bcd_Axi_v1_0/src
+make -C microblaze_0/libsrc/bcd_Axi_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/tmrctr_v4_3/src
+make -C microblaze_0/libsrc/tmrctr_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make libs in microblaze_0/libsrc/bram_v4_1/src
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bram
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in microblaze_0/libsrc/cpu_v2_6/src
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling cpu
+Running Make libs in microblaze_0/libsrc/standalone_v6_3/src
+make -C microblaze_0/libsrc/standalone_v6_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling standalone
+Running Make libs in microblaze_0/libsrc/intc_v3_6/src
+make -C microblaze_0/libsrc/intc_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling intc
+Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartlite
+Running Make libs in microblaze_0/libsrc/bcd_Axi_v1_0/src
+make -C microblaze_0/libsrc/bcd_Axi_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bcd_Axi...
+bcd_Axi_selftest.c: In function 'BCD_AXI_Reg_SelfTest':
+bcd_Axi_selftest.c:52:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( BCD_AXI_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                        ^~
+bcd_Axi_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+Running Make libs in microblaze_0/libsrc/tmrctr_v4_3/src
+make -C microblaze_0/libsrc/tmrctr_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling tmrctr
+Finished building libraries
+08:31:44 **** Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building file: ../src/timer_api.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_api.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_api.d" -MT"src/timer_api.o" -o "src/timer_api.o" "../src/timer_api.c"
+Finished building: ../src/timer_api.c
+ 
+Building file: ../src/uart_api.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_api.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_api.d" -MT"src/uart_api.o" -o "src/uart_api.o" "../src/uart_api.c"
+Finished building: ../src/uart_api.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6380	    320	   3108	   9808	   2650	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+08:31:48 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+08:32:35 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+08:34:08 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6332	    320	   3108	   9760	   2620	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+08:34:11 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+08:37:34 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+In file included from ../../bcd_seg_mb_bsp/microblaze_0/include/xil_printf.h:12:0,
+                 from ../src/system_config.h:11,
+                 from ../src/test_run.h:11,
+                 from ../src/test_run.c:1:
+../src/test_run.c: In function 'main':
+../../bcd_seg_mb_bsp/microblaze_0/include/xparameters.h:472:41: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define XPAR_BCD_AXI_0_S00_AXI_BASEADDR 0x44A00000
+                                         ^
+../src/system_config.h:39:23: note: in expansion of macro 'XPAR_BCD_AXI_0_S00_AXI_BASEADDR'
+ #define BCD_BASE_ADDR XPAR_BCD_AXI_0_S00_AXI_BASEADDR
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/test_run.c:7:18: note: in expansion of macro 'BCD_BASE_ADDR'
+  u32 *data_ptr = BCD_BASE_ADDR;
+                  ^~~~~~~~~~~~~
+../src/test_run.c:7:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6344	    320	   3104	   9768	   2628	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+08:37:44 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:7:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6344	    320	   3104	   9768	   2628	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+08:39:21 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5936	    320	   3104	   9360	   2490	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+08:39:23 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+08:39:57 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5944	    320	   3104	   9368	   2498	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+08:40:39 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5996	    320	   3108	   9424	   24d0	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+08:40:45 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+08:40:58 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6024	    320	   3104	   9448	   24e8	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+08:43:10 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6168	    320	   3104	   9592	   2578	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+08:43:14 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+09:02:04 **** Clean-only build of project bcd_seg_mb_bsp ****
+make -k clean 
+make -C microblaze_0/libsrc/bram_v4_1/src -s clean 
+make -C microblaze_0/libsrc/cpu_v2_6/src -s clean 
+make -C microblaze_0/libsrc/standalone_v6_3/src -s clean 
+make -C microblaze_0/libsrc/intc_v3_6/src -s clean 
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
+make -C microblaze_0/libsrc/bcd_Axi_v1_0/src -s clean 
+make -C microblaze_0/libsrc/tmrctr_v4_3/src -s clean 
+rm -f microblaze_0/lib/libxil.a
+09:02:04 **** Clean-only build of configuration Debug for project bcd_seg_mb ****
+make clean 
+rm -rf  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o  ./src/test_run.d ./src/timer_api.d ./src/uart_api.d  bcd_seg_mb.elf.size  bcd_seg_mb.elf
+ 
+09:02:05 **** Build of project bcd_seg_mb_bsp ****
+make -k all 
+Running Make include in microblaze_0/libsrc/bram_v4_1/src
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/cpu_v2_6/src
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/standalone_v6_3/src
+make -C microblaze_0/libsrc/standalone_v6_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/intc_v3_6/src
+make -C microblaze_0/libsrc/intc_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/uartlite_v3_2/src
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/bcd_Axi_v1_0/src
+make -C microblaze_0/libsrc/bcd_Axi_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/tmrctr_v4_3/src
+make -C microblaze_0/libsrc/tmrctr_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make libs in microblaze_0/libsrc/bram_v4_1/src
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bram
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in microblaze_0/libsrc/cpu_v2_6/src
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling cpu
+Running Make libs in microblaze_0/libsrc/standalone_v6_3/src
+make -C microblaze_0/libsrc/standalone_v6_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling standalone
+Running Make libs in microblaze_0/libsrc/intc_v3_6/src
+make -C microblaze_0/libsrc/intc_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling intc
+Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartlite
+Running Make libs in microblaze_0/libsrc/bcd_Axi_v1_0/src
+make -C microblaze_0/libsrc/bcd_Axi_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bcd_Axi...
+bcd_Axi_selftest.c: In function 'BCD_AXI_Reg_SelfTest':
+bcd_Axi_selftest.c:52:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( BCD_AXI_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                        ^~
+bcd_Axi_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+Running Make libs in microblaze_0/libsrc/tmrctr_v4_3/src
+make -C microblaze_0/libsrc/tmrctr_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling tmrctr
+Finished building libraries
+09:02:08 **** Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building file: ../src/timer_api.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_api.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_api.d" -MT"src/timer_api.o" -o "src/timer_api.o" "../src/timer_api.c"
+Finished building: ../src/timer_api.c
+ 
+Building file: ../src/uart_api.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_api.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_api.d" -MT"src/uart_api.o" -o "src/uart_api.o" "../src/uart_api.c"
+Finished building: ../src/uart_api.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6168	    320	   3104	   9592	   2578	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+09:02:57 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+09:09:02 **** Clean-only build of project bcd_seg_mb_bsp ****
+make -k clean 
+make -C microblaze_0/libsrc/bram_v4_1/src -s clean 
+make -C microblaze_0/libsrc/cpu_v2_6/src -s clean 
+make -C microblaze_0/libsrc/standalone_v6_3/src -s clean 
+make -C microblaze_0/libsrc/intc_v3_6/src -s clean 
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
+make -C microblaze_0/libsrc/bcd_Axi_v1_0/src -s clean 
+make -C microblaze_0/libsrc/tmrctr_v4_3/src -s clean 
+rm -f microblaze_0/lib/libxil.a
+09:09:02 **** Clean-only build of configuration Debug for project bcd_seg_mb ****
+make clean 
+rm -rf  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o  ./src/test_run.d ./src/timer_api.d ./src/uart_api.d  bcd_seg_mb.elf.size  bcd_seg_mb.elf
+ 
+09:09:03 **** Build of project bcd_seg_mb_bsp ****
+make -k all 
+Running Make include in microblaze_0/libsrc/bram_v4_1/src
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/cpu_v2_6/src
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/standalone_v6_3/src
+make -C microblaze_0/libsrc/standalone_v6_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/intc_v3_6/src
+make -C microblaze_0/libsrc/intc_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/uartlite_v3_2/src
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/bcd_Axi_v1_0/src
+make -C microblaze_0/libsrc/bcd_Axi_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/tmrctr_v4_3/src
+make -C microblaze_0/libsrc/tmrctr_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make libs in microblaze_0/libsrc/bram_v4_1/src
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bram
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in microblaze_0/libsrc/cpu_v2_6/src
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling cpu
+Running Make libs in microblaze_0/libsrc/standalone_v6_3/src
+make -C microblaze_0/libsrc/standalone_v6_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling standalone
+Running Make libs in microblaze_0/libsrc/intc_v3_6/src
+make -C microblaze_0/libsrc/intc_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling intc
+Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartlite
+Running Make libs in microblaze_0/libsrc/bcd_Axi_v1_0/src
+make -C microblaze_0/libsrc/bcd_Axi_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bcd_Axi...
+bcd_Axi_selftest.c: In function 'BCD_AXI_Reg_SelfTest':
+bcd_Axi_selftest.c:52:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( BCD_AXI_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                        ^~
+bcd_Axi_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+Running Make libs in microblaze_0/libsrc/tmrctr_v4_3/src
+make -C microblaze_0/libsrc/tmrctr_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling tmrctr
+Finished building libraries
+09:09:05 **** Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building file: ../src/timer_api.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_api.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_api.d" -MT"src/timer_api.o" -o "src/timer_api.o" "../src/timer_api.c"
+Finished building: ../src/timer_api.c
+ 
+Building file: ../src/uart_api.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_api.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_api.d" -MT"src/uart_api.o" -o "src/uart_api.o" "../src/uart_api.c"
+Finished building: ../src/uart_api.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6168	    320	   3104	   9592	   2578	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+09:26:26 **** Clean-only build of project bcd_seg_mb_bsp ****
+make -k clean 
+make -C microblaze_0/libsrc/bram_v4_1/src -s clean 
+make -C microblaze_0/libsrc/cpu_v2_6/src -s clean 
+make -C microblaze_0/libsrc/standalone_v6_3/src -s clean 
+make -C microblaze_0/libsrc/intc_v3_6/src -s clean 
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
+make -C microblaze_0/libsrc/bcd_Axi_v1_0/src -s clean 
+make -C microblaze_0/libsrc/tmrctr_v4_3/src -s clean 
+rm -f microblaze_0/lib/libxil.a
+09:26:26 **** Clean-only build of configuration Debug for project bcd_seg_mb ****
+make clean 
+rm -rf  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o  ./src/test_run.d ./src/timer_api.d ./src/uart_api.d  bcd_seg_mb.elf.size  bcd_seg_mb.elf
+ 
+09:26:27 **** Build of project bcd_seg_mb_bsp ****
+make -k all 
+Running Make include in microblaze_0/libsrc/bram_v4_1/src
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/cpu_v2_6/src
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/standalone_v6_3/src
+make -C microblaze_0/libsrc/standalone_v6_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/intc_v3_6/src
+make -C microblaze_0/libsrc/intc_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/uartlite_v3_2/src
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/bcd_Axi_v1_0/src
+make -C microblaze_0/libsrc/bcd_Axi_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/tmrctr_v4_3/src
+make -C microblaze_0/libsrc/tmrctr_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make libs in microblaze_0/libsrc/bram_v4_1/src
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bram
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in microblaze_0/libsrc/cpu_v2_6/src
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling cpu
+Running Make libs in microblaze_0/libsrc/standalone_v6_3/src
+make -C microblaze_0/libsrc/standalone_v6_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling standalone
+Running Make libs in microblaze_0/libsrc/intc_v3_6/src
+make -C microblaze_0/libsrc/intc_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling intc
+Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartlite
+Running Make libs in microblaze_0/libsrc/bcd_Axi_v1_0/src
+make -C microblaze_0/libsrc/bcd_Axi_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bcd_Axi...
+bcd_Axi_selftest.c: In function 'BCD_AXI_Reg_SelfTest':
+bcd_Axi_selftest.c:52:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( BCD_AXI_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                        ^~
+bcd_Axi_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+Running Make libs in microblaze_0/libsrc/tmrctr_v4_3/src
+make -C microblaze_0/libsrc/tmrctr_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling tmrctr
+Finished building libraries
+09:26:30 **** Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building file: ../src/timer_api.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_api.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_api.d" -MT"src/timer_api.o" -o "src/timer_api.o" "../src/timer_api.c"
+Finished building: ../src/timer_api.c
+ 
+Building file: ../src/uart_api.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_api.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_api.d" -MT"src/uart_api.o" -o "src/uart_api.o" "../src/uart_api.c"
+Finished building: ../src/uart_api.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6168	    320	   3104	   9592	   2578	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+09:28:35 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6176	    320	   3104	   9600	   2580	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+09:29:04 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6200	    320	   3104	   9624	   2598	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+09:29:19 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6232	    320	   3104	   9656	   25b8	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+09:29:42 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6280	    320	   3104	   9704	   25e8	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+09:29:46 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+09:30:33 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+09:30:55 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6280	    320	   3104	   9704	   25e8	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+09:30:56 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+09:31:06 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6280	    320	   3104	   9704	   25e8	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+09:31:09 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+09:47:55 **** Clean-only build of project bcd_seg_mb_bsp ****
+make -k clean 
+make -C microblaze_0/libsrc/bram_v4_1/src -s clean 
+make -C microblaze_0/libsrc/cpu_v2_6/src -s clean 
+make -C microblaze_0/libsrc/standalone_v6_3/src -s clean 
+make -C microblaze_0/libsrc/intc_v3_6/src -s clean 
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
+make -C microblaze_0/libsrc/bcd_Axi_v1_0/src -s clean 
+make -C microblaze_0/libsrc/tmrctr_v4_3/src -s clean 
+rm -f microblaze_0/lib/libxil.a
+09:47:56 **** Clean-only build of configuration Debug for project bcd_seg_mb ****
+make clean 
+rm -rf  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o  ./src/test_run.d ./src/timer_api.d ./src/uart_api.d  bcd_seg_mb.elf.size  bcd_seg_mb.elf
+ 
+09:47:56 **** Build of project bcd_seg_mb_bsp ****
+make -k all 
+Running Make include in microblaze_0/libsrc/bram_v4_1/src
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/cpu_v2_6/src
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/standalone_v6_3/src
+make -C microblaze_0/libsrc/standalone_v6_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/intc_v3_6/src
+make -C microblaze_0/libsrc/intc_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/uartlite_v3_2/src
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/bcd_Axi_v1_0/src
+make -C microblaze_0/libsrc/bcd_Axi_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/tmrctr_v4_3/src
+make -C microblaze_0/libsrc/tmrctr_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make libs in microblaze_0/libsrc/bram_v4_1/src
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bram
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in microblaze_0/libsrc/cpu_v2_6/src
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling cpu
+Running Make libs in microblaze_0/libsrc/standalone_v6_3/src
+make -C microblaze_0/libsrc/standalone_v6_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling standalone
+Running Make libs in microblaze_0/libsrc/intc_v3_6/src
+make -C microblaze_0/libsrc/intc_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling intc
+Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartlite
+Running Make libs in microblaze_0/libsrc/bcd_Axi_v1_0/src
+make -C microblaze_0/libsrc/bcd_Axi_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bcd_Axi...
+bcd_Axi_selftest.c: In function 'BCD_AXI_Reg_SelfTest':
+bcd_Axi_selftest.c:52:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( BCD_AXI_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                        ^~
+bcd_Axi_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+Running Make libs in microblaze_0/libsrc/tmrctr_v4_3/src
+make -C microblaze_0/libsrc/tmrctr_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling tmrctr
+Finished building libraries
+09:47:59 **** Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building file: ../src/timer_api.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_api.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_api.d" -MT"src/timer_api.o" -o "src/timer_api.o" "../src/timer_api.c"
+Finished building: ../src/timer_api.c
+ 
+Building file: ../src/uart_api.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_api.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_api.d" -MT"src/uart_api.o" -o "src/uart_api.o" "../src/uart_api.c"
+Finished building: ../src/uart_api.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6280	    320	   3104	   9704	   25e8	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+09:50:02 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+09:52:01 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6228	    320	   3108	   9656	   25b8	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:08:45 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6332	    320	   3108	   9760	   2620	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:09:29 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6332	    320	   3108	   9760	   2620	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:09:45 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'print_on_7seg':
+../src/test_run.c:5:4: error: 'data_ptr' undeclared (first use in this function)
+  *(data_ptr + 0) = data;
+    ^~~~~~~~
+../src/test_run.c:5:4: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:27: recipe for target 'src/test_run.o' failed
+make: *** [src/test_run.o] Error 1
+10:09:59 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6332	    320	   3108	   9760	   2620	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:10:47 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:31:5: warning: unused variable 'tries' [-Wunused-variable]
+  u8 tries = 9;
+     ^~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6340	    320	   3108	   9768	   2628	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:11:20 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6428	    320	   3108	   9856	   2680	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:11:27 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+10:12:01 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:36:5: error: expected ';' before 'return'
+     return 0;
+     ^~~~~~
+make: *** [src/test_run.o] Error 1
+src/subdir.mk:27: recipe for target 'src/test_run.o' failed
+10:12:05 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6472	    320	   3104	   9896	   26a8	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:13:03 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6472	    320	   3104	   9896	   26a8	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:13:56 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7316	    340	   3200	  10856	   2a68	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:14:27 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:34:13: warning: unused variable 'number_guess' [-Wunused-variable]
+  u8 number, number_guess;
+             ^~~~~~~~~~~~
+../src/test_run.c:34:5: warning: unused variable 'number' [-Wunused-variable]
+  u8 number, number_guess;
+     ^~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7316	    340	   3200	  10856	   2a68	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:15:45 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:36:13: warning: variable 'number_guess' set but not used [-Wunused-but-set-variable]
+  u8 number, number_guess;
+             ^~~~~~~~~~~~
+../src/test_run.c:36:5: warning: unused variable 'number' [-Wunused-variable]
+  u8 number, number_guess;
+     ^~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8028	    340	   3200	  11568	   2d30	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:17:36 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:41:13: warning: variable 'number_guess' set but not used [-Wunused-but-set-variable]
+  u8 number, number_guess;
+             ^~~~~~~~~~~~
+../src/test_run.c:41:5: warning: unused variable 'number' [-Wunused-variable]
+  u8 number, number_guess;
+     ^~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7888	    340	   3196	  11424	   2ca0	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:18:14 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:43:13: warning: variable 'number_guess' set but not used [-Wunused-but-set-variable]
+  u8 number, number_guess;
+             ^~~~~~~~~~~~
+../src/test_run.c:43:5: warning: unused variable 'number' [-Wunused-variable]
+  u8 number, number_guess;
+     ^~~~~~
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7808	    340	   3196	  11344	   2c50	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:18:28 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:35:13: warning: variable 'number_guess' set but not used [-Wunused-but-set-variable]
+  u8 number, number_guess;
+             ^~~~~~~~~~~~
+../src/test_run.c:35:5: warning: unused variable 'number' [-Wunused-variable]
+  u8 number, number_guess;
+     ^~~~~~
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7808	    340	   3196	  11344	   2c50	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:23:32 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:35:13: warning: variable 'number_guess' set but not used [-Wunused-but-set-variable]
+  u8 number, number_guess;
+             ^~~~~~~~~~~~
+../src/test_run.c:35:5: warning: unused variable 'number' [-Wunused-variable]
+  u8 number, number_guess;
+     ^~~~~~
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building file: ../src/timer_api.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_api.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_api.d" -MT"src/timer_api.o" -o "src/timer_api.o" "../src/timer_api.c"
+Finished building: ../src/timer_api.c
+ 
+Building file: ../src/uart_api.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_api.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_api.d" -MT"src/uart_api.o" -o "src/uart_api.o" "../src/uart_api.c"
+Finished building: ../src/uart_api.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7808	    340	   3196	  11344	   2c50	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:23:52 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:44:5: error: expected ';' before 'return'
+     return 0;
+     ^~~~~~
+../src/test_run.c:35:13: warning: variable 'number_guess' set but not used [-Wunused-but-set-variable]
+  u8 number, number_guess;
+             ^~~~~~~~~~~~
+src/subdir.mk:27: recipe for target 'src/test_run.o' failed
+../src/test_run.c:35:5: warning: unused variable 'number' [-Wunused-variable]
+  u8 number, number_guess;
+     ^~~~~~
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+make: *** [src/test_run.o] Error 1
+10:23:57 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:35:13: warning: variable 'number_guess' set but not used [-Wunused-but-set-variable]
+  u8 number, number_guess;
+             ^~~~~~~~~~~~
+../src/test_run.c:35:5: warning: unused variable 'number' [-Wunused-variable]
+  u8 number, number_guess;
+     ^~~~~~
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9144	    356	   3244	  12744	   31c8	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:27:23 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:35:13: warning: variable 'number_guess' set but not used [-Wunused-but-set-variable]
+  u8 number, number_guess;
+             ^~~~~~~~~~~~
+../src/test_run.c:35:5: warning: unused variable 'number' [-Wunused-variable]
+  u8 number, number_guess;
+     ^~~~~~
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9336	    356	   3244	  12936	   3288	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:27:51 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:35:13: warning: variable 'number_guess' set but not used [-Wunused-but-set-variable]
+  u8 number, number_guess;
+             ^~~~~~~~~~~~
+../src/test_run.c:35:5: warning: unused variable 'number' [-Wunused-variable]
+  u8 number, number_guess;
+     ^~~~~~
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9336	    356	   3244	  12936	   3288	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:28:34 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:35:13: warning: variable 'number_guess' set but not used [-Wunused-but-set-variable]
+  u8 number, number_guess;
+             ^~~~~~~~~~~~
+../src/test_run.c:35:5: warning: unused variable 'number' [-Wunused-variable]
+  u8 number, number_guess;
+     ^~~~~~
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9340	    356	   3248	  12944	   3290	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:29:12 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:35:5: warning: unused variable 'number' [-Wunused-variable]
+  u8 number, number_guess;
+     ^~~~~~
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9384	    356	   3244	  12984	   32b8	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:29:25 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+10:29:55 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:35:5: warning: unused variable 'number' [-Wunused-variable]
+  u8 number, number_guess;
+     ^~~~~~
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9388	    356	   3248	  12992	   32c0	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:30:05 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:35:5: warning: unused variable 'number' [-Wunused-variable]
+  u8 number, number_guess;
+     ^~~~~~
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9388	    356	   3248	  12992	   32c0	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:30:27 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:35:5: warning: unused variable 'number' [-Wunused-variable]
+  u8 number, number_guess;
+     ^~~~~~
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9408	    356	   3244	  13008	   32d0	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:30:30 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+10:31:22 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:39:6: warning: unused variable 'time_elapsed' [-Wunused-variable]
+  u32 time_elapsed = 0;
+      ^~~~~~~~~~~~
+../src/test_run.c:35:5: warning: unused variable 'number' [-Wunused-variable]
+  u8 number, number_guess;
+     ^~~~~~
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9412	    356	   3248	  13016	   32d8	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:31:50 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:39:6: warning: unused variable 'time_elapsed' [-Wunused-variable]
+  u32 time_elapsed = 0;
+      ^~~~~~~~~~~~
+../src/test_run.c:35:5: warning: unused variable 'number' [-Wunused-variable]
+  u8 number, number_guess;
+     ^~~~~~
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9664	    356	   3244	  13264	   33d0	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:32:18 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:39:6: warning: variable 'time_elapsed' set but not used [-Wunused-but-set-variable]
+  u32 time_elapsed = 0;
+      ^~~~~~~~~~~~
+../src/test_run.c:35:5: warning: unused variable 'number' [-Wunused-variable]
+  u8 number, number_guess;
+     ^~~~~~
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9848	    356	   3244	  13448	   3488	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:33:36 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:35:5: warning: unused variable 'number' [-Wunused-variable]
+  u8 number, number_guess;
+     ^~~~~~
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9892	    356	   3248	  13496	   34b8	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:33:41 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+10:34:56 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:35:5: warning: unused variable 'number' [-Wunused-variable]
+  u8 number, number_guess;
+     ^~~~~~
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20100	   1396	   3312	  24808	   60e8	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:35:53 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:35:5: warning: unused variable 'number' [-Wunused-variable]
+  u8 number, number_guess;
+     ^~~~~~
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20108	   1396	   3312	  24816	   60f0	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:36:01 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+10:36:53 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:35:5: warning: unused variable 'number' [-Wunused-variable]
+  u8 number, number_guess;
+     ^~~~~~
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9476	    356	   3248	  13080	   3318	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:36:55 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+10:37:56 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:35:5: warning: unused variable 'number' [-Wunused-variable]
+  u8 number, number_guess;
+     ^~~~~~
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20108	   1396	   3312	  24816	   60f0	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:38:56 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:35:5: warning: variable 'number' set but not used [-Wunused-but-set-variable]
+  u8 number, number_guess;
+     ^~~~~~
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20300	   1396	   3312	  25008	   61b0	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:39:19 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:35:5: warning: variable 'number' set but not used [-Wunused-but-set-variable]
+  u8 number, number_guess;
+     ^~~~~~
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20340	   1396	   3312	  25048	   61d8	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:40:24 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19928	   1396	   3308	  24632	   6038	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:40:29 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+10:41:19 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19928	   1396	   3308	  24632	   6038	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:41:24 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19928	   1396	   3308	  24632	   6038	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:41:28 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.
+10:47:49 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19928	   1396	   3308	  24632	   6038	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:48:01 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19928	   1396	   3308	  24632	   6038	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:48:04 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19928	   1396	   3308	  24632	   6038	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:50:24 **** Auto Build of configuration Debug for project bcd_seg_mb ****
+make all 
+Building file: ../src/test_run.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_run.o" -I../../bcd_seg_mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_run.d" -MT"src/test_run.o" -o "src/test_run.o" "../src/test_run.c"
+../src/test_run.c: In function 'main':
+../src/test_run.c:32:6: warning: unused variable 'data_read' [-Wunused-variable]
+  u32 data_read = 0;
+      ^~~~~~~~~
+../src/test_run.c:31:7: warning: unused variable 'data_ptr' [-Wunused-variable]
+  u32 *data_ptr = (u32*) BCD_BASE_ADDR;
+       ^~~~~~~~
+Finished building: ../src/test_run.c
+ 
+Building target: bcd_seg_mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bcd_seg_mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bcd_seg_mb.elf"  ./src/test_run.o ./src/timer_api.o ./src/uart_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bcd_seg_mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bcd_seg_mb.elf  |tee "bcd_seg_mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20804	   1396	   3312	  25512	   63a8	bcd_seg_mb.elf
+Finished building: bcd_seg_mb.elf.size
+ 
+10:50:33 **** Incremental Build of configuration Debug for project bcd_seg_mb ****
+make all 
+make: Nothing to be done for 'all'.

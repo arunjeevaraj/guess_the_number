@@ -1,0 +1,17 @@
+#include "test_run.h"
+
+
+
+int main()
+{
+	xil_printf("System Initialized \r\n");
+	BCD_AXI_mWriteReg(BCD_BASE_ADDR, 0, 1);
+	u32 data_read = 0;
+	data_read = BCD_AXI_mReadReg(BCD_BASE_ADDR, 0);
+	if (data_read == 1) {
+		xil_printf("read and write to axi to BCD_seg worked \r\n");
+	}
+    return 0;
+}
+
+

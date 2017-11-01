@@ -1,0 +1,11 @@
+#include "test_run.h"
+
+
+
+int main()
+{
+	xil_printf("System Initialized \r\n");
+    return 0;
+}
+
+
